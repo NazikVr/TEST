@@ -96,19 +96,23 @@ body {
   
 
   &__title {
-    margin-left: 148px;
+    margin-left: 50px;
+    @media (min-width: 1160px) {
+      margin-left: 148px;
+    }
   }
 
   &__content {
     border-radius: 20px;
     background-color: rgba(145, 157, 181, 0.25);
-    padding: 80px 148px;
+    padding: 40px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
     @media (min-width: 1160px) {
+      padding: 80px 148px;
       flex-direction: row;
       align-items: normal;
     }
