@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Hello</title>
+  </head>
+
+  <body>
+
+    <section class="hello">
+      <div class="container">
+        <h1 class="hello__title">
+          Oh, Hello
+        </h1>
+        <div class="hello__content">
+          <div class="hello__email email">
+            <h4 class="email__title">
+              Your project can
+              become our pride
+            </h4>
+            <div class="email__text body2">
+              Leave your contact details and our specialists will contact you shortly. Or send an email to
+            </div>
+            <a href="#" class="email__link">
+              Send e-mail
+            </a>
+          </div>
+          <div class="hello__form form">
+            <h7 class="form__title">
+              Write us a letter
+            </h7>
+            <form action="/" class="form__form" id="form">
+              <label class="form__input-group">
+                <div class="form__inputTitle body1">
+                  Your name*
+                </div>
+                <input type="text" class="form__input form__input--name _req" placeholder="Your name"
+                  onchange="changeName()">
+                <div class="form__input-group--error">
+                  <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.666992 13.0002H15.3337L8.00033 0.333496L0.666992 13.0002ZM8.66699 11.0002H7.33366V9.66683H8.66699V11.0002ZM8.66699 8.3335H7.33366V5.66683H8.66699V8.3335Z"
+                      fill="#F03738" />
+                  </svg>
+                  <span>This field must be filled in</span>
+                </div>
+                <div class="form__input-group--success">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.99967 0.333496C3.31967 0.333496 0.333008 3.32016 0.333008 7.00016C0.333008 10.6802 3.31967 13.6668 6.99967 13.6668C10.6797 13.6668 13.6663 10.6802 13.6663 7.00016C13.6663 3.32016 10.6797 0.333496 6.99967 0.333496ZM5.66634 10.3335L2.33301 7.00016L3.27301 6.06016L5.66634 8.44683L10.7263 3.38683L11.6663 4.3335L5.66634 10.3335Z"
+                      fill="#3CC13B" />
+                  </svg>
+                  <span>Success message</span>
+                </div>
+              </label>
+              <label class="form__input-group">
+                <div class="form__inputTitle body1">
+                  Phone*
+                </div>
+                <input type="text" class="form__input form__input--phone _req" placeholder="Phone*" onchange="changeNum()">
+                <div class="form__input-group--error">
+                  <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.666992 13.0002H15.3337L8.00033 0.333496L0.666992 13.0002ZM8.66699 11.0002H7.33366V9.66683H8.66699V11.0002ZM8.66699 8.3335H7.33366V5.66683H8.66699V8.3335Z"
+                      fill="#F03738" />
+                  </svg>
+                  <span>This field must be filled in</span>
+                </div>
+                <div class="form__input-group--success">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.99967 0.333496C3.31967 0.333496 0.333008 3.32016 0.333008 7.00016C0.333008 10.6802 3.31967 13.6668 6.99967 13.6668C10.6797 13.6668 13.6663 10.6802 13.6663 7.00016C13.6663 3.32016 10.6797 0.333496 6.99967 0.333496ZM5.66634 10.3335L2.33301 7.00016L3.27301 6.06016L5.66634 8.44683L10.7263 3.38683L11.6663 4.3335L5.66634 10.3335Z"
+                      fill="#3CC13B" />
+                  </svg>
+                  <span>Success message</span>
+                </div>
+              </label>
+              <label class="form__input-group">
+                <div class="form__inputTitle body1">
+                  Message *
+                </div>
+                <input type="text" class="form__input form__input--message _req" placeholder="Message"
+                  onchange="changeMes()">
+                <div class="form__input-group--error">
+                  <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.666992 13.0002H15.3337L8.00033 0.333496L0.666992 13.0002ZM8.66699 11.0002H7.33366V9.66683H8.66699V11.0002ZM8.66699 8.3335H7.33366V5.66683H8.66699V8.3335Z"
+                      fill="#F03738" />
+                  </svg>
+                  <span>This field must be filled in</span>
+                </div>
+                <div class="form__input-group--success">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.99967 0.333496C3.31967 0.333496 0.333008 3.32016 0.333008 7.00016C0.333008 10.6802 3.31967 13.6668 6.99967 13.6668C10.6797 13.6668 13.6663 10.6802 13.6663 7.00016C13.6663 3.32016 10.6797 0.333496 6.99967 0.333496ZM5.66634 10.3335L2.33301 7.00016L3.27301 6.06016L5.66634 8.44683L10.7263 3.38683L11.6663 4.3335L5.66634 10.3335Z"
+                      fill="#3CC13B" />
+                  </svg>
+                  <span>Success message</span>
+                </div>
+              </label>
+              <label class="form__input--wrapper form__input-group">
+                <div class="form__input--checkbox-text body1">
+                  I agree with the processing of the entered data and the privacy policy. *
+                </div>
+                <input type="checkbox" class="form__input--checkbox form__input--checkbox-err _req">
+              </label>
+              <button type="submit" class="form__button">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+
+</html>
